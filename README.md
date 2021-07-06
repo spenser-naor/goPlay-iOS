@@ -4,7 +4,7 @@
 
 ## About 
 
-goPlay is at its core, a social networking app. At first glance, it's obvious - photo feed, upvotes, profiles, comments, network of friends. But goPlay has a bit more going on under the hood.
+I started goPlay in 2015 as a passion project and exercise in pursuing a small idea into something big. goPlay is at its core, a social networking app. At first glance, it's obvious - photo feed, upvotes, profiles, comments, network of friends. But goPlay has a bit more going on under the hood.
 
 The goal of the goPlay project is to find a way to incentivize average users to engage in outdoor play more often. In some ways it's the anti-social media app. Using social **and financial** (more about this below) incentives to encourage activities **away from the screens**
 
@@ -39,14 +39,12 @@ Check out the [goPlay Social Website](https://www.goplay.social) for more inform
 Each photo shared to the feed records a real-world **activity**, engaged in by real people at a real location.
 The feed featued a semi-transparent sliding info pane for each photo, complete with upvotes, comments, and report capablities.
 
-
-![AD_Feed_Small](https://user-images.githubusercontent.com/24867725/124374138-97110680-dc4d-11eb-8253-78a394c065f4.png)
-
+![AD_Feed_Small](https://user-images.githubusercontent.com/24867725/124678281-0f0e4500-de77-11eb-8e2b-3829e038f663.png)
 
 ## Activities
 What makes goPlay's "real-world **activity**" different than just sharing a photo on instagram? Well here's where goPlay diverges from typical social networking. Users have two main routes for participating in and activity - **Start** and **Find**
 
-![AD_Activities](https://user-images.githubusercontent.com/24867725/124374147-a98b4000-dc4d-11eb-8517-5de69ee86b26.png)
+![AD_Activities](https://user-images.githubusercontent.com/24867725/124678298-16355300-de77-11eb-82d2-21b2260534c7.png)
 
 #### Start
 Users can start a new activity by filling out some basic information - type/location/time  etc, and invite players within their network. Once the game is over, the game leader can **Lock In** the game, which posts it to the feed for themselves and all players.
@@ -56,21 +54,18 @@ goPlay leverages Google Maps and Apple's MapKit to allow users to visualy search
 
 ## Profile and Badges
 
-As users participate in more activities they will automatically earn badges which represent their efforts. This is how goPlay quanitifies the user's participation in a given activity category, and is the heart of the financial incentive structure leverage by the **in-app Marketplace**
+As users participate in more activities they will automatically earn badges which represent their efforts. This is how goPlay quanitifies the user's participation in a given activity category, and is the heart of the financial incentive structure leverage by the **in-app Marketplace**. Over time, users build up a library of badges representing their unique activity history.
 
-![AD_ProfBadges](https://user-images.githubusercontent.com/24867725/124374153-b27c1180-dc4d-11eb-9807-f65a9bb34989.png)
+![AD_ProfBadges](https://user-images.githubusercontent.com/24867725/124678306-1df4f780-de77-11eb-962e-446ed69c28a6.png)
 
-
-Over time, users build up a library of badges representing their unique activity history.
-
-![05_Badges](https://user-images.githubusercontent.com/24867725/124374155-c0319700-dc4d-11eb-907b-98a1a81ca016.png) 
 
 ## Market
 
 
 goPlay's in-app market is where it all comes together. Users get access to exclusive product and service deals based on their specific badge ranks. So, play more games, get more (and deeper) deals. This is Groupon + Meet-Up. Users are incentivized to get out of the house, and merchants are happy to give discounts to people who verifiably participate in their target market. Win-win.
 
-![08_MarketAll](https://user-images.githubusercontent.com/24867725/124374165-ce7fb300-dc4d-11eb-8491-9b54d506a8eb.png)
+![08_MarketAll](https://user-images.githubusercontent.com/24867725/124678350-31a05e00-de77-11eb-838d-32a132481d0a.png)
+
 
 In its first implementation, I used various affiliate patforms to aggregate the deals. I ran a simple script via Heroku and Node.js to scrape the deals, generate badge requirements, and ingest them into our database. This was a fully automated process.
 
